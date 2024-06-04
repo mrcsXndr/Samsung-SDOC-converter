@@ -1,2 +1,4 @@
-.output
-.sdoc
+output/
+sdoc/
+/output
+/sdoc
