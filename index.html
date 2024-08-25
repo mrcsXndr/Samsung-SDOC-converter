@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Notes Audio Extractor | Convert SDOC to .m4a Online</title>
+    <meta name="description" content="Easily extract audio files from Samsung Notes (.sdoc) and convert them to .m4a with our free online tool. Fast and secure.">
+    <meta property="og:title" content="Samsung Notes Audio Extractor | Convert SDOC to .m4a Online">
+    <meta property="og:description" content="Easily extract audio files from Samsung Notes (.sdoc) and convert them to .m4a with our free online tool. Fast and secure.">
+    <meta property="og:url" content="https://note-converter.mrcsxndr.dev">
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="Samsung Notes, SDOC, audio extractor, convert SDOC to m4a, SDOC to audio, Samsung Notes converter, online tool, Samsung Notes audio, Samsung Notes file converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Samsung Notes Audio Extractor | Convert SDOC to .m4a Online">
+    <meta name="twitter:description" content="Easily extract audio files from Samsung Notes (.sdoc) and convert them to .m4a with our free online tool. Fast and secure.">
+    <link rel="canonical" href="https://note-converter.mrcsxndr.dev">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Samsung Notes Audio Extractor",
+      "url": "https://note-converter.mrcsxndr.dev",
+      "description": "Extract audio files from Samsung Notes (.sdoc) and convert them to .m4a",
+      "applicationCategory": "Utility",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body class="mdc-typography">
+    <header class="site-header">
+        <div class="container">
+            <h1>Convert Samsung Notes (SDOC) to Audio (.m4a)</h1>
+            <p>The easiest way to extract audio from your Samsung Notes files.</p>
+        </div>
+    </header>
+    <nav class="site-nav">
+        <div class="container">
+            <a href="#introduction">Introduction</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#use-cases">Use Cases</a>
+            <a href="#faq">FAQ</a>
+            <a href="#technical-details">Technical Details</a>
+        </div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <section class="app-section">
+                <div class="app-description">
+                    <p>Extract audio files from your Samsung Notes documents quickly and easily.</p>
+                </div>
+                <div id="file-input-container">
+                    <input type="file" id="fileInput" accept=".sdoc,.sdocx" multiple style="display: none;">
+                    <button id="selectFilesBtn" class="mdc-button mdc-button--raised">
+                        <span class="mdc-button__ripple"></span>
+                        <span class="mdc-button__label">Select Files</span>
+                    </button>
+                    <button id="clearFilesBtn" class="mdc-button mdc-button--outlined" disabled>
+                        <span class="mdc-button__ripple"></span>
+                        <span class="mdc-button__label">Clear Files</span>
+                    </button>
+                </div>
+                <ul id="selected-files"></ul>
+                <button id="convertBtn" class="mdc-button mdc-button--raised" disabled>
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__label">Convert</span>
+                </button>
+                <div id="result"></div>
+            </section>
+
+            <div class="seo-content">
+                <section id="introduction">
+                    <h2>What is Samsung Notes and SDOC?</h2>
+                    <p>Samsung Notes is a popular note-taking app used by millions of people worldwide. It allows users to create documents that include text, images, and audio recordings. These documents are often saved with the .sdoc or .sdocx extension.</p>
+                    <p>Many users aren't aware that they can easily extract the audio files embedded within these Samsung Notes documents. Our tool is designed to simplify this process, allowing you to convert Samsung Notes files to .m4a audio format quickly and easily.</p>
+                </section>
+
+                <section id="how-it-works">
+                    <h2>How It Works</h2>
+                    <ol>
+                        <li>Upload your <a href="#technical-details">Samsung Notes file (.sdoc or .sdocx)</a> by clicking the "Select Files" button.</li>
+                        <li>Our tool scans the document for embedded audio files, which are often hidden within the notes.</li>
+                        <li>Download the extracted audio files in .m4a format, packaged neatly in a ZIP file for your convenience.</li>
+                    </ol>
+                    <p>This process is completely secure, and your files are not stored on our servers. We prioritize your privacy and convenience.</p>
+                </section>
+
+                <section id="use-cases">
+                    <h2>Use Cases and Benefits</h2>
+                    <h3>For Students and Professionals</h3>
+                    <p>If you often use Samsung Notes to record lectures, meetings, or voice memos, our tool is perfect for you. Extract these important audio files and store them separately for easy access and sharing.</p>
+                    <h3>For Content Creators</h3>
+                    <p>Content creators who use Samsung Notes for brainstorming ideas or recording voice memos can easily convert these recordings into shareable .m4a files, ready for editing or publishing.</p>
+                    <h3>Save Time and Effort</h3>
+                    <p>Manually extracting audio files from Samsung Notes can be a hassle. With our tool, you can complete the process in just a few clicks, saving you valuable time.</p>
+                </section>
+
+                <section id="faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 itemprop="name">What is an SDOC file?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                SDOC files are specific to Samsung Notes and can contain various types of data, including text, images, and audio. These files are often used by Samsung Galaxy users for taking notes that integrate multimedia elements.
+                            </div>
+                        </div>
+                    </div>
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 itemprop="name">How can I convert Samsung Notes to audio?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                Simply upload your Samsung Notes file (.sdoc or .sdocx) to our tool. The tool will automatically extract and convert any embedded audio files into .m4a format, which you can then download.
+                            </div>
+                        </div>
+                    </div>
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 itemprop="name">Is this tool free to use?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                Yes, our Samsung Notes Audio Extractor is completely free to use, with no hidden charges or subscription fees.
+                            </div>
+                        </div>
+                    </div>
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 itemprop="name">Can I extract multiple audio files at once?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                Yes, if your Samsung Notes document contains multiple audio recordings, our tool will extract all of them and package them in a single ZIP file for easy download.
+                            </div>
+                        </div>
+                    </div>
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 itemprop="name">What formats are supported?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                Our tool supports .sdoc and .sdocx formats, which are native to Samsung Notes. The extracted audio is provided in .m4a format, which is widely supported across various devices and platforms.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="technical-details">
+                    <h2>Technical Details</h2>
+                    <p>Supported Formats: SDOC, SDOCX (from Samsung Notes)</p>
+                    <p>Output Formats: .m4a (audio files)</p>
+                    <p>Compatibility: Works on all major browsers, including Chrome, Firefox, Safari, and Edge. Our tool is also optimized for both desktop and mobile use, ensuring a smooth experience no matter your device.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2023 Samsung Notes Audio Extractor. All rights reserved.</p>
+            <a href="#faq">FAQ</a> | <a href="/sitemap.xml">Sitemap</a>
+            <p>Last Updated: <time datetime="2023-04-14">April 14, 2023</time></p>
+            <p>This tool is an online Samsung Notes converter and audio extractor.</p>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
